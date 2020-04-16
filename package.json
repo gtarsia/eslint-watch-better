@@ -1,0 +1,17 @@
+{
+  "name": "eslint-watch-better",
+  "version": "0.1.0",
+  "bin": "bin.js",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "fix": "eslint --fix lib '**/*.js'",
+    "test": "nyc ava",
+    "test:watch": "ava --watch"
+  },
+  "devDependencies": {
+    "ava": "^3.7.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0"
+  }
+}
