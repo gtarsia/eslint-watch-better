@@ -4,8 +4,9 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
+    'airbnb-base',
+    'plugin:import/errors',
+    'plugin:import/warnings'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

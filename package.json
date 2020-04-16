@@ -1,10 +1,13 @@
 {
   "name": "eslint-watch-better",
-  "version": "0.1.0",
-  "bin": "bin.js",
+  "version": "0.0.0",
+  "bin": {
+    "esw": "bin.js"
+  },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "esw": "node bin.js src",
     "fix": "eslint --fix lib '**/*.js'",
     "test": "nyc ava",
     "test:watch": "ava --watch"
@@ -12,6 +15,17 @@
   "devDependencies": {
     "ava": "^3.7.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "peerDependencies": {
+    "eslint": "6.x"
+  },
+  "dependencies": {
+    "ansi-escapes": "^4.3.1",
+    "chokidar": "^3.3.1",
+    "debounce-fn": "^4.0.0",
+    "esm": "^3.2.25"
   }
 }
