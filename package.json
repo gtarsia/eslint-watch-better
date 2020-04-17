@@ -1,6 +1,6 @@
 {
   "name": "eslint-watch-better",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "bin": {
     "esw": "bin.js"
   },
