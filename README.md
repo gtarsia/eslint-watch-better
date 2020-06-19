@@ -12,7 +12,7 @@ eslint-watch-better is better than [eslint-watch](https://github.com/rizowski/es
 `yarn global add eslint-watch-better`
 
 From the terminal:
-`esw <files to watch>`
+`esw <files or dirs to watch>`
 
 Or make it an npm script in your `package.json`:
 
@@ -20,7 +20,7 @@ Or make it an npm script in your `package.json`:
 {
   ...
   "scripts": {
-    "esw": "esw <files to watch>"
+    "esw": "esw <files or dirs to watch>"
   }
   ...
 }

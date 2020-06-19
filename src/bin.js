@@ -2,7 +2,7 @@ import chokidar from 'chokidar'
 import callback from './callback'
 import lint from './lint'
 
-const paths = process.argv[2]
+const [,,...paths] = process.argv
 const chokiEvent = 'all'
 chokidar.watch(paths).on(chokiEvent, callback)
 
